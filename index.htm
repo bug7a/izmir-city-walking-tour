@@ -169,7 +169,7 @@
                         width: 90,
                         height: 90,
                         position: "absolute",
-                        color: "yellow",
+                        color: "transparent",
                     });
 
                         //Icon(-20, -20, 120, 120);
@@ -318,22 +318,27 @@
             });
 
             Label({
+                text: "<b>Who i am?</b> I'm Buğra. I lived and worked in hostels for years. I love helping backpackers create beautiful memories. You can explore Izmir using the guide I've prepared for you. Enjoy.",
+                fontSize: 14,
+            });
+
+            Label({
                 text: "WALKING ROUTES (ROTAS)",
                 ...titleStyle,
             });
             that.elem.style.marginTop = "20px";
 
             Label({
-                text: "- <b>Rota #1:</b> Alsancak to Konak (Click to see on komoot)",
+                text: "- <b>Route A (4.5km) Alsancak:</b> Lively streets where locals have fun. Breakfast experience with boyoz. Places to drink Turkish coffee. Walks along beautiful streets and by the sea. Access to ferries for crossing to Bostanlı and Karşıyaka. (Click to see on Komoot)",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
             that.on("click", function(self) {
-                window.open("https://www.komoot.com/tour/2967641361?share_token=aFqbhXQTAjZnB6nWBBGY5goCB3A4vsvlUXQq7TnDNj1qd9Hfmt&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
+                window.open("https://www.komoot.com/tour/2984783584?share_token=ar5vrcvOA7ZmlZCfen7rIbs8LGBzFmnltqh1hZV8tUskxgmw2h&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
 
             Label({
-                text: "- <b>Rota #2:</b> Bostanlı (Beautiful streets & local food experience in a modern neighborhood)",
+                text: "- <b>Route B1 (3.5km) Bostanlı:</b> Beautiful streets & local food experience in a modern neighborhood. Some delicacies like çiğ köfte and kokoreç. Desserts like baklava and halva. Small restaurants frequented by locals. Nice places to drink Turkish coffee. Sports fields (Basketball, Tennis), a skate park, and a sunset viewing area. (Click to see on komoot)",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
@@ -342,7 +347,7 @@
             });
 
             Label({
-                text: "- <b>Rota #3:</b> Karşıyaka",
+                text: "- <b>Route B2 (1km) Karşıyaka:</b> A walk through an area with restaurants, shops, and pleasant cafes. A large bazaar consisting of countless streets. (Click to see on komoot)",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
@@ -351,8 +356,22 @@
             });
 
             Label({
-                text: "Note: To get to Bostanlı, you can use the Pasaport or Alsancak ferry piers. Credit cards are accepted. The ferry may stop at Karşıyaka first; Bostanlı is the last pier. This ferry trip is like a mini-boat tour of Izmir. Enjoy it.",
+                text: "<b>Note:</b> To get to Bostanlı, you can use the Pasaport or Alsancak ferry piers. Credit cards are accepted. The ferry may stop at Karşıyaka first; Bostanlı is the last pier. This ferry trip is like a mini-boat tour of Izmir. Enjoy it.",
                 fontSize: 12,
+            });
+
+            Label({
+                text: "If you'd like to meet a local friend, I live in Bostanlı. You can contact me via WhatsApp to arrange a meeting at Bostanlı Pier. And we can walk my favorite routes B1 and B2 together.",
+                fontSize: 12,
+            });
+
+            Label({
+                text: "- <b>Route C (8km) Alsancak to Konak:</b> A long walk. Explore the most beautiful spots of the historic Kemeraltı Bazaar easily with me. (Click to see on komoot)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.komoot.com/tour/2967641361?share_token=aFqbhXQTAjZnB6nWBBGY5goCB3A4vsvlUXQq7TnDNj1qd9Hfmt&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
 
             Label({
@@ -528,9 +547,9 @@
 
             <br>- Kokoreç: Spiced, grilled lamb intestines chopped finely with tomatoes and green peppers, seasoned heavily with cumin and oregano, served inside a toasted half-bread. A legendary post-alcohol midnight snack.
 
-            <br>- Pide: Often called "Turkish Pizza." A boat-shaped flatbread baked in wood-fired ovens, topped with ingredients like minced meat, cheese, or eggs. (Suggested minced meat and cheese or vegetarian options for vegetarians.)
-
             <br>- Et Dürüm: High-quality shaved beef doner or grilled meat wrapped tightly inside a soft lavaş flatbread with onions and parsley. The ultimate wrap on-the-go.
+
+            <br>- Pide: Often called "Turkish Pizza." A boat-shaped flatbread baked in wood-fired ovens, topped with ingredients like minced meat, cheese, or eggs. (Suggested minced meat and cheese or vegetarian options for vegetarians.)
 
             <br>- Lahmacun: Ultra-thin, crispy round dough topped with a minced meat, onion, and tomato mix. Roll it up with parsley and a heavy squeeze of lemon.
 
@@ -551,6 +570,8 @@
             <br><br><b>DESSERT</b><br>
 
             <br>- Baklava: Layers of paper-thin phyllo dough filled with chopped pistachios or walnuts, baked until crisp and sweetened with heavy sugar syrup. (Search Baklava on google maps)
+
+            <br>- Helva: It’s like an ancient, high-energy fudge, but made from sesame seeds. (Helvacı Ali Bostanlı) 
 
             <br><br><br>
             </div>
