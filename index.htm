@@ -702,6 +702,12 @@
             });
             page.add(that);
 
+                box.lblLoading = Label({
+                    text: "Loading...",
+                    textColor: White(0.8),
+                });
+                that.center();
+
                 Icon(0, 0);
                 that.elem.style.cursor = "pointer";
                 that.load(path);
@@ -710,6 +716,7 @@
                     const _height = height || 700;
                     self.height = _height;
                     self.width = _height * theNumber;
+                    box.lblLoading.remove();
                 });
                 //const _imagePath = element.path;
                 that.on("click", function(self) {
@@ -718,8 +725,10 @@
                     box.remove();
                 });
 
+                const _lblName = (name) ?  name : "Click to close";
+
                 box.lbl = Label({
-                    text:  (name) ?  name : "Click to close",
+                    text: _lblName,
                     left: 10,
                     top: 10,
                     padding: [12, 4],
