@@ -650,7 +650,7 @@
 
                         Icon();
                         that.elem.style.cursor = "pointer";
-                        that.load(element.path);
+                        that.load("sm-" + element.path);
                         that.onLoad(function(self) {
                             const theNumber = self.naturalWidth / self.naturalHeight;
                             self.height = VIEW_HEIGHT;
