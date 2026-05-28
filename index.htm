@@ -318,18 +318,19 @@
             });
 
             Label({
-                text: "<b>Who i am?</b> I'm Buğra. I lived and worked in hostels for years. I love helping backpackers create beautiful memories. You can explore Izmir using the guide I've prepared for you. Enjoy.",
+                text: "<b>Who i am?</b> I'm Buğra. I lived and worked in <a href='https://www.hostelchillsteps.com/' target='_blank' style='text-decoration: none;'><span style='color: #CD5F44;background-color:#FFF9C5;'><b>Hostel Chillsteps</b></span></a> at Fethiye for years. I love helping backpackers create beautiful memories. You can explore Izmir using the guide I've prepared for you. Enjoy.",
                 fontSize: 14,
+                clickable: 1,
             });
 
             Label({
-                text: "WALKING ROUTES (ROTAS)",
+                text: "WALKING ROUTES",
                 ...titleStyle,
             });
             that.elem.style.marginTop = "20px";
 
             Label({
-                text: "- <b>Route A (4.5km) Alsancak:</b> Lively streets where locals have fun. Breakfast experience with boyoz. Places to drink Turkish coffee. Walks along beautiful streets and by the sea. Access to ferries for crossing to Bostanlı and Karşıyaka. (Click to see on Komoot)",
+                text: "- <b>Route A (4.5km) Alsancak:</b> Lively streets where locals have fun. Breakfast experience with boyoz. Places to drink Turkish coffee. Walks along beautiful streets and by the sea. Access to ferries for crossing to Bostanlı and Karşıyaka. <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Click to see on komoot</b></span>",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
@@ -337,8 +338,20 @@
                 window.open("https://www.komoot.com/tour/2984783584?share_token=ar5vrcvOA7ZmlZCfen7rIbs8LGBzFmnltqh1hZV8tUskxgmw2h&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
 
+            initImageView([
+                { path: "images/alsancak1.png" },
+                { path: "images/alsancak2.png" },
+                { path: "images/alsancak3.png" },
+                { path: "images/alsancak4.png" },
+                { path: "images/alsancak5.png" },
+                { path: "images/alsancak6.png" },
+                { path: "images/alsancak7.png" },
+                { path: "images/alsancak8.png" },
+                { path: "images/alsancak9.png" },
+            ]);
+
             Label({
-                text: "- <b>Route B1 (3.5km) Bostanlı:</b> Beautiful streets & local food experience in a modern neighborhood. Some delicacies like çiğ köfte and kokoreç. Desserts like baklava and halva. Small restaurants frequented by locals. Nice places to drink Turkish coffee. Sports fields (Basketball, Tennis), a skate park, and a sunset viewing area. (Click to see on komoot)",
+                text: "- <b>Route B1 (3.5km) Bostanlı:</b> Beautiful streets & local food experience in a modern neighborhood. Some delicacies like çiğ köfte and kokoreç. Desserts like baklava and halva. Small restaurants frequented by locals. Nice places to drink Turkish coffee. Sports fields, a skate park, and a sunset viewing area. <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Click to see on komoot</b></span>", // (Basketball, Tennis)
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
@@ -346,8 +359,32 @@
                 window.open("https://www.komoot.com/tour/2977979252?share_token=aFIEQM0sUGwrfhl0OX894SpNCKxt6oIQ8utl9F6Syy4cjK73Pe&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
 
+            initImageView([
+                { path: "images/bostanli1.jpg" },
+                { path: "images/bostanli2.png" },
+                { path: "images/bostanli3.png" },
+                { path: "images/bostanli4.png" },
+                { path: "images/bostanli5.png" },
+                { path: "images/bostanli6.png" },
+                { path: "images/bostanli7.png" },
+                { path: "images/bostanli8.png" },
+                { path: "images/bostanli9.png" },
+            ]);
+
             Label({
-                text: "- <b>Route B2 (1km) Karşıyaka:</b> A walk through an area with restaurants, shops, and pleasant cafes. A large bazaar consisting of countless streets. (Click to see on komoot)",
+                text: "<b>Note:</b> To get to Bostanlı, you can use the Pasaport or Alsancak ferry piers. Credit cards are accepted. The ferry may stop at Karşıyaka first; Bostanlı is the last pier. This ferry trip is like a mini-boat tour of Izmir. Enjoy it.",
+                fontSize: 12,
+            });
+            that.elem.style.marginTop = "-22px";
+
+            Label({
+                text: "If you'd like to meet a local friend, I live in Bostanlı. You can contact me via WhatsApp to arrange a meeting at in front of Bostanlı Pier. And we can walk my favorite routes B1 and B2 together.", // And you can help me improve this experience.
+                fontSize: 12,
+            });
+            that.elem.style.marginBottom = "30px";
+
+            Label({
+                text: "- <b>Route B2 (1km) Karşıyaka:</b> A walk through an area with restaurants, shops, and pleasant cafes. A large bazaar consisting of countless streets. <span style='color: #CD5F44;background-color:#FFF9C5; '><b>Click to see on komoot</b></span>",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
@@ -355,24 +392,38 @@
                 window.open("https://www.komoot.com/tour/2978960340?share_token=alSjyPeQJ7kXOAiGfzg77XYTs6RkSgc9Q9Ot57OgKg4zmMuGeJ&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
 
-            Label({
-                text: "<b>Note:</b> To get to Bostanlı, you can use the Pasaport or Alsancak ferry piers. Credit cards are accepted. The ferry may stop at Karşıyaka first; Bostanlı is the last pier. This ferry trip is like a mini-boat tour of Izmir. Enjoy it.",
-                fontSize: 12,
-            });
+            initImageView([
+                { path: "images/karsiyaka1.png" },
+                { path: "images/karsiyaka2.png" },
+                { path: "images/karsiyaka3.png" },
+                { path: "images/karsiyaka4.png" },
+                { path: "images/karsiyaka5.png" },
+                { path: "images/karsiyaka6.png" },
+                { path: "images/karsiyaka7.png" },
+                { path: "images/karsiyaka8.png" },
+            ]);
 
             Label({
-                text: "If you'd like to meet a local friend, I live in Bostanlı. You can contact me via WhatsApp to arrange a meeting at Bostanlı Pier. And we can walk my favorite routes B1 and B2 together.",
-                fontSize: 12,
-            });
-
-            Label({
-                text: "- <b>Route C (8km) Alsancak to Konak:</b> A long walk. Explore the most beautiful spots of the historic Kemeraltı Bazaar easily with me. (Click to see on komoot)",
+                text: "- <b>Route C (8km) Alsancak to Konak:</b> A long walk. Explore the most beautiful spots of the historic Kemeraltı Bazaar easily with me. See the clock tower, a symbol of Izmir. Walk along the entire coast from the mansion to Alsancak. <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Click to see on komoot</b></span>",
                 fontSize: 14,
             });
             that.elem.style.cursor = "pointer";
             that.on("click", function(self) {
                 window.open("https://www.komoot.com/tour/2967641361?share_token=aFqbhXQTAjZnB6nWBBGY5goCB3A4vsvlUXQq7TnDNj1qd9Hfmt&ref=wtd&t_s=referral&t_cid=route_share&t_ref_username=3806877680885", '_blank');
             });
+
+            initImageView([
+                { path: "images/konak1.jpg" },
+                { path: "images/konak3.png" },
+                { path: "images/konak4.png" },
+                { path: "images/konak5.png" },
+                { path: "images/konak6.png" },
+                { path: "images/konak7.png" },
+                { path: "images/konak8.png" },
+                { path: "images/konak9.png" },
+                { path: "images/konak10.png" },
+                { path: "images/konak11.png" },
+            ]);
 
             Label({
                 text: "NEIGHBOURHOODS AT A GLANCE",
@@ -407,13 +458,21 @@
             that.elem.style.marginTop = "20px";
 
             Label({
-                text: "- <b>Shantihome</b> (Alsancak): A legendary, ultra-friendly bohemian hostel located in the heart of Alsancak’s alleyways. Perfect for solo travelers wanting to meet people and share stories.",
+                text: "- <b>Shantihome</b> (Alsancak): A legendary, ultra-friendly bohemian hostel located in the heart of Alsancak’s alleyways. Perfect for solo travelers wanting to meet people and share stories. <br><span style='color: #CD5F44;background-color:#FFF9C5;'><b>Click to see on hostelworld</b></span>",
                 fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.hostelworld.com/tr/hostels/p/87709/shantihome-hostel-izmir/", '_blank');
             });
 
             Label({
-                text: "- <b>Lotus Garden Hostel</b> (Konak/Basmane): A peaceful hostel featuring a beautiful, green historic courtyard. It offers a relaxed, communal atmosphere and is steps away from Agora and Kemeraltı Bazaar.",
+                text: "- <b>Lotus Garden Hostel</b> (Konak/Basmane): A peaceful hostel featuring a beautiful, green historic courtyard. It offers a relaxed, communal atmosphere and is steps away from Agora and Kemeraltı Bazaar. <br><span style='color: #CD5F44;background-color:#FFF9C5;'><b>Click to see on hostelworld</b></span>",
                 fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.hostelworld.com/tr/hostels/p/99001/lotus-garden-hostel-izmir/", '_blank');
             });
 
             Label({
@@ -422,11 +481,52 @@
             });
             that.elem.style.marginTop = "20px";
 
+            initImageView([
+                { path: "images/food/boyoz.png", name: "Boyoz" },
+                { path: "images/food/simit.png", name: "Gevrek (Simit)" },
+                { path: "images/food/cay.png", name: "Çay (Tea)" },
+                { path: "images/food/cig-kofte.png", name: "Çiğ Köfte (%100 Vegan)" },
+                { path: "images/food/cig-kofte2.png", name: "Çiğ Köfte (%100 Vegan)" },
+                { path: "images/food/kokorec.png", name: "Kokoreç" },
+                { path: "images/food/et-durum.png", name: "Et Dürüm" },
+                { path: "images/food/et-durum2.png", name: "Et Dürüm" },
+                { path: "images/food/pide.png", name: "Pide" },
+                { path: "images/food/lahmacun.png", name: "Lahmacun" },
+                { path: "images/food/manti.png", name: "Mantı" },
+                { path: "images/food/gozleme.png", name: "Gözleme" },
+                { path: "images/food/kebap.png", name: "Manisa Kebap" },
+                { path: "images/food/ayran.png", name: "Ayran (Salty Yogurt Drink)" },
+                { path: "images/food/kahve.png", name: "Türk Kahvesi (Turkish Coffee)" },
+                { path: "images/food/baklava.png", name: "Baklava" },
+                { path: "images/food/helva.png", name: "Helva" },
+            ], 500);
+
             Label({
                 text: "",
                 fontSize: 14,
             });
             that.text = document.getElementById("food-exp").innerHTML;
+
+            Label({
+                text: "<b>Note:</b> I can also plan a trip to <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Fethiye</b></span> for you.",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://sites.google.com/view/fethiye-guide/fethiye", '_blank');
+            });
+            that.elem.style.marginBottom = "10px";
+
+            Label({
+                text: "Developed by <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Buğra Özden</b></span>",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://bug7a.github.io/", '_blank');
+            });
+
+            Box(0,0,40,40);
 
             endGroup();
 
@@ -523,6 +623,135 @@
             
         };
 
+        const initImageView = function(list, height) {
+
+            const VIEW_HEIGHT = 100;
+
+            const box = startBox({
+                color: "black",
+                width: "100%",
+                height: VIEW_HEIGHT,
+                position: "relative",
+                scrollX: 1,
+                border: 1,
+                borderColor: Black(1),
+                round: 2,
+            });
+            box.elem.style.marginTop = "8px";
+            box.elem.style.marginBottom = "30px";
+
+                HGroup({
+                    align: "top left",
+                    width: "auto",
+                    gap: 2,
+                });
+
+                    list.forEach(element => {
+
+                        Icon();
+                        that.elem.style.cursor = "pointer";
+                        that.load(element.path);
+                        that.onLoad(function(self) {
+                            const theNumber = self.naturalWidth / self.naturalHeight;
+                            self.height = VIEW_HEIGHT;
+                            self.width = VIEW_HEIGHT * theNumber;
+                        });
+                        const _imagePath = element.path;
+                        const _imageName = (element.name) ? element.name : "";
+                        that.on("click", function() {
+                            showImage(_imagePath, height, _imageName);
+                        });
+                        
+                    });
+
+                endGroup();
+
+            endBox();
+
+            box.scrollBar = ScrollBar({
+                scrollableBox: box,
+                bar_border: 0,
+                bar_round: 3,
+                bar_borderColor: "rgba(0, 0, 0, 1)",
+                bar_width: 4,
+                bar_mouseOverWidth: 4, //8
+                bar_mouseOverColor: "black",
+                bar_opacity: 0.9,
+                bar_mouseOverOpacity: 0.9,
+                bar_padding: 2,
+                bar_color: "black",
+                neverHide: 1,
+                showDots: 1,
+            });
+
+        };
+
+        const showImage = function(path, height, name) {
+
+            const box = startBox({
+                top: 0,
+                left: 0,
+                color: "black",
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                scrollX: 1,
+                scrollY: 1,
+                border: 0,
+                round: 0,
+            });
+            page.add(that);
+
+                Icon(0, 0);
+                that.elem.style.cursor = "pointer";
+                that.load(path);
+                that.onLoad(function(self) {
+                    const theNumber = self.naturalWidth / self.naturalHeight;
+                    const _height = height || 700;
+                    self.height = _height;
+                    self.width = _height * theNumber;
+                });
+                //const _imagePath = element.path;
+                that.on("click", function(self) {
+                    self.remove();
+                    box.lbl.remove();
+                    box.remove();
+                });
+
+                box.lbl = Label({
+                    text:  (name) ?  name : "Click to close",
+                    left: 10,
+                    top: 10,
+                    padding: [12, 4],
+                    color: Black(0.8),
+                    textColor: White(0.9),
+                    border: 1,
+                    borderColor: White(0.8),
+                    fontSize: 16,
+                    round: 4,
+                });
+                page.add(that);
+
+            endBox();
+
+            box.scrollBar = ScrollBar({
+                scrollableBox: box,
+                bar_border: 0,
+                bar_round: 3,
+                bar_borderColor: "rgba(0, 0, 0, 1)",
+                bar_width: 4,
+                bar_mouseOverWidth: 4, //8
+                bar_mouseOverColor: "black",
+                bar_opacity: 0.9,
+                bar_mouseOverOpacity: 0.9,
+                bar_padding: 2,
+                bar_color: "black",
+                neverHide: 1,
+                showDots: 1,
+            });
+
+        };
+
         </script>
 
     </head>
@@ -535,45 +764,48 @@
 
             <br><b>BREAKFAST</b><br>
 
-            <br>- Boyoz: A savory, flaky pastry unique to İzmir, brought here by Sephardic Jewish immigrants in the 15th century. It is traditionally eaten warm with a hard-boiled egg sprinkled with black pepper.
+            <br>- <b>Boyoz:</b> A savory, flaky pastry unique to İzmir, brought here by Sephardic Jewish immigrants in the 15th century. It is traditionally eaten warm with a hard-boiled egg sprinkled with black pepper.
 
-            <br>- Simit: Known as "Gevrek" in İzmir. A circular bread encrusted with sesame seeds, molasses-dipped and baked to a crunchy perfection.
+            <br>- <b>Simit:</b> Known as "Gevrek" in İzmir. A circular bread encrusted with sesame seeds, molasses-dipped and baked to a crunchy perfection.
 
-            <br>- Turkish Tea (Çay): Served in tulip-shaped glasses. The essential fuel for any Turkish morning.
+            <br>- <b>Turkish Tea (Çay):</b> Served in tulip-shaped glasses. The essential fuel for any Turkish morning.
 
             <br><br><b>FAST FOOD</b><br>
 
-            <br>- Çiğ Köfte: Originally raw meat, but now strictly vegetarian by law for street vendors. It’s a spicy paste made of bulgur wheat, isot pepper, and spices, kneaded together and wrapped in lavaş (flatbread) with lettuce, pomegranate molasses, and lemon juice. Cheap, filling, and 100% vegan. (Search Komagene on google maps)
+            <br>- <b>Çiğ Köfte:</b> Originally raw meat, but now strictly vegetarian by law for street vendors. It’s a spicy paste made of bulgur wheat, isot pepper, and spices, kneaded together and wrapped in lavaş (flatbread) with lettuce, pomegranate molasses, and lemon juice. Cheap, filling, and 100% vegan. (Search Komagene on google maps)
 
-            <br>- Kokoreç: Spiced, grilled lamb intestines chopped finely with tomatoes and green peppers, seasoned heavily with cumin and oregano, served inside a toasted half-bread. A legendary post-alcohol midnight snack.
+            <br>- <b>Kokoreç:</b> Spiced, grilled lamb intestines chopped finely, seasoned heavily with cumin and oregano, served inside a toasted half-bread. A legendary post-alcohol midnight snack.
 
-            <br>- Et Dürüm: High-quality shaved beef doner or grilled meat wrapped tightly inside a soft lavaş flatbread with onions and parsley. The ultimate wrap on-the-go.
+            <br>- <b>Et Dürüm:</b> High-quality shaved beef doner or grilled meat wrapped tightly inside a soft lavaş flatbread with onions and parsley. The ultimate wrap on-the-go.
 
-            <br>- Pide: Often called "Turkish Pizza." A boat-shaped flatbread baked in wood-fired ovens, topped with ingredients like minced meat, cheese, or eggs. (Suggested minced meat and cheese or vegetarian options for vegetarians.)
+            <br>- <b>Pide:</b> Often called "Turkish Pizza." A boat-shaped flatbread baked in wood-fired ovens, topped with ingredients like minced meat, cheese, or eggs. (Suggested minced meat and cheese. Or vegetarian options for vegetarians.)
 
-            <br>- Lahmacun: Ultra-thin, crispy round dough topped with a minced meat, onion, and tomato mix. Roll it up with parsley and a heavy squeeze of lemon.
+            <br>- <b>Lahmacun:</b> Ultra-thin, crispy round dough topped with a minced meat, onion, and tomato mix. Roll it up with parsley and a heavy squeeze of lemon.
 
-            <br>- Mantı: Often described as "Turkish Ravioli." Tiny dough pockets filled with spiced meat, boiled and topped with a garlic-yogurt sauce, melted butter, and dried mint. (İdil Mantı Evi at Alsancak Seaside)
+            <br>- <b>Mantı:</b></Mant> Often described as "Turkish Ravioli." Tiny dough pockets filled with spiced meat, boiled and topped with a garlic-yogurt sauce, melted butter, and dried mint. (İdil Mantı Evi at Alsancak Seaside)
 
-            <br>- Gözleme: Thin, hand-rolled dough sheets folded over various fillings (spinach, feta cheese, potatoes, or minced meat) and cooked on a curved iron griddle. (Gözlemecim at Kemeraltı)
+            <br>- <b>Gözleme:</b> Thin, hand-rolled dough sheets folded over various fillings (spinach, feta cheese, potatoes, or minced meat) and cooked on a curved iron griddle. (Gözlemecim at Kemeraltı)
 
-            <br>- Manisa Kebabı: Thin, long spiced meat patties served over a bed of warm pita bread cubes, drenched in a rich tomato sauce and melted sizzling butter, usually served with yogurt. (Doyuran Manisa Kebap at Kemeraltı)
+            <br>- <b>Manisa Kebabı:</b> Thin, long spiced meat patties served over a bed of warm pita bread cubes, drenched in a rich tomato sauce and melted sizzling butter, usually served with yogurt. (Doyuran Manisa Kebap at Kemeraltı)
 
             <br><br><b>SUGGESTED DRINK</b> is Ayran to accompany the meal. (with Çiğ Köfte, Kokoreç, Pide, Et Dürüm, Gözleme)<br>
 
-            <br>- Ayran: A refreshing, cold, salty yogurt drink. It is the absolute best companion to heavy meat dishes like Lahmacun or Dürüm because it balances the spices.
+            <br>- <b>Ayran:</b> A refreshing, cold, salty yogurt drink. It is the absolute best companion to heavy meat dishes like Lahmacun or Dürüm because it balances the spices.
 
             <br><br><b>COFFEE SHOP</b><br>
 
-            <br>- Turkish Coffee: Thick, strong, and unfiltered coffee brewed in copper pots. Note for foreigners: Stop drinking when you reach the muddy sludge at the bottom!
+            <br>- <b>Turkish Coffee:</b> Thick, strong, and unfiltered coffee brewed in copper pots. Note for foreigners: Stop drinking when you reach the muddy sludge at the bottom!
 
             <br><br><b>DESSERT</b><br>
 
-            <br>- Baklava: Layers of paper-thin phyllo dough filled with chopped pistachios or walnuts, baked until crisp and sweetened with heavy sugar syrup. (Search Baklava on google maps)
+            <br>- <b>Baklava:</b> Layers of paper-thin phyllo dough filled with chopped pistachios or walnuts, baked until crisp and sweetened with heavy sugar syrup. (Search Baklava on google maps)
 
-            <br>- Helva: It’s like an ancient, high-energy fudge, but made from sesame seeds. (Helvacı Ali Bostanlı) 
+            <br>- <b>Helva:</b> It’s like an ancient, high-energy fudge, but made from sesame seeds. (Helvacı Ali Bostanlı) 
 
             <br><br><br>
+
+
+
             </div>
 
          </div>
