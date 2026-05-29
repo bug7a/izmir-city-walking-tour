@@ -640,11 +640,28 @@
             box.elem.style.marginTop = "8px";
             box.elem.style.marginBottom = "30px";
 
+            box.scrollBar = ScrollBar({
+                scrollableBox: box,
+                bar_border: 1,
+                bar_round: 3,
+                bar_borderColor: Black(1),
+                bar_width: 4,
+                bar_mouseOverWidth: 4, //8
+                bar_mouseOverColor: "gold",
+                bar_opacity: 0.9,
+                bar_mouseOverOpacity: 0.9,
+                bar_padding: 2,
+                bar_color: "gold",
+                neverHide: 1,
+                showDots: 0,
+            });
+
                 HGroup({
                     align: "top left",
                     width: "auto",
                     gap: 2,
                 });
+                //that.elem.style.minWidth = "600px";
 
                     list.forEach(element => {
 
@@ -655,6 +672,7 @@
                             const theNumber = self.naturalWidth / self.naturalHeight;
                             self.height = VIEW_HEIGHT;
                             self.width = VIEW_HEIGHT * theNumber;
+                            box.scrollBar.refreshScroll();
                         });
                         const _imagePath = element.path;
                         const _imageName = (element.name) ? element.name : "";
@@ -667,26 +685,6 @@
                 endGroup();
 
             endBox();
-
-            box.scrollBar = ScrollBar({
-                scrollableBox: box,
-                bar_border: 0,
-                bar_round: 3,
-                bar_borderColor: "rgba(0, 0, 0, 1)",
-                bar_width: 4,
-                bar_mouseOverWidth: 4, //8
-                bar_mouseOverColor: "#F1C74A",
-                bar_opacity: 0.9,
-                bar_mouseOverOpacity: 0.9,
-                bar_padding: 2,
-                bar_color: "#F1C74A",
-                neverHide: 1,
-                showDots: 1,
-            });
-
-            setTimeout(function() {
-                box.scrollBar.refreshScroll();
-            }, 1000);
 
         };
 
@@ -706,6 +704,22 @@
             });
             page.add(that);
 
+            box.scrollBar = ScrollBar({
+                scrollableBox: box,
+                bar_border: 1,
+                bar_round: 3,
+                bar_borderColor: Black(1),
+                bar_width: 4,
+                bar_mouseOverWidth: 4, //8
+                bar_mouseOverColor: "orangered",
+                bar_opacity: 0.9,
+                bar_mouseOverOpacity: 0.9,
+                bar_padding: 2,
+                bar_color: "orangered",
+                neverHide: 1,
+                showDots: 0,
+            });
+
                 box.lblLoading = Label({
                     text: "Loading...",
                     textColor: White(0.8),
@@ -721,6 +735,7 @@
                     self.height = _height;
                     self.width = _height * theNumber;
                     box.lblLoading.remove();
+                    box.scrollBar.refreshScroll();
                 });
                 //const _imagePath = element.path;
                 that.on("click", function(self) {
@@ -746,26 +761,6 @@
                 page.add(that);
 
             endBox();
-
-            box.scrollBar = ScrollBar({
-                scrollableBox: box,
-                bar_border: 0,
-                bar_round: 3,
-                bar_borderColor: "rgba(0, 0, 0, 1)",
-                bar_width: 4,
-                bar_mouseOverWidth: 4, //8
-                bar_mouseOverColor: "orangered",
-                bar_opacity: 0.9,
-                bar_mouseOverOpacity: 0.9,
-                bar_padding: 2,
-                bar_color: "orangered",
-                neverHide: 1,
-                showDots: 1,
-            });
-
-            setTimeout(function() {
-                box.scrollBar.refreshScroll();
-            }, 1000);
 
         };
 
