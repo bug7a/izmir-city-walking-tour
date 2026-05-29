@@ -25,7 +25,7 @@
         <link rel="preload" href="basic/font/open-sans/OpenSans-Regular.ttf" as="font" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="basic/basic.min.css">
         <script src="basic/basic.js" type="text/javascript" charset="utf-8"></script>
-        <script src="basic/scroll-bar.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="basic/scroll-bar.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- <script src="_component-template.min.js" type="text/javascript" charset="utf-8"></script> -->
 
@@ -649,7 +649,7 @@
                     list.forEach(element => {
 
                         Icon();
-                        that.elem.style.cursor = "pointer";
+                        that.elem.style.cursor = "zoom-in";
                         that.load("sm-" + element.path);
                         that.onLoad(function(self) {
                             const theNumber = self.naturalWidth / self.naturalHeight;
@@ -675,14 +675,18 @@
                 bar_borderColor: "rgba(0, 0, 0, 1)",
                 bar_width: 4,
                 bar_mouseOverWidth: 4, //8
-                bar_mouseOverColor: "black",
+                bar_mouseOverColor: "#F1C74A",
                 bar_opacity: 0.9,
                 bar_mouseOverOpacity: 0.9,
                 bar_padding: 2,
-                bar_color: "black",
+                bar_color: "#F1C74A",
                 neverHide: 1,
                 showDots: 1,
             });
+
+            setTimeout(function() {
+                box.scrollBar.refreshScroll();
+            }, 1000);
 
         };
 
@@ -709,7 +713,7 @@
                 that.center();
 
                 Icon(0, 0);
-                that.elem.style.cursor = "pointer";
+                that.elem.style.cursor = "zoom-out";
                 that.load(path);
                 that.onLoad(function(self) {
                     const theNumber = self.naturalWidth / self.naturalHeight;
@@ -750,14 +754,18 @@
                 bar_borderColor: "rgba(0, 0, 0, 1)",
                 bar_width: 4,
                 bar_mouseOverWidth: 4, //8
-                bar_mouseOverColor: "black",
+                bar_mouseOverColor: "orangered",
                 bar_opacity: 0.9,
                 bar_mouseOverOpacity: 0.9,
                 bar_padding: 2,
-                bar_color: "black",
+                bar_color: "orangered",
                 neverHide: 1,
                 showDots: 1,
             });
+
+            setTimeout(function() {
+                box.scrollBar.refreshScroll();
+            }, 1000);
 
         };
 
