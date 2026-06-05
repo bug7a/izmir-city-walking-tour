@@ -560,6 +560,57 @@
             that.text = document.getElementById("food-exp").innerHTML;
 
             Label({
+                text: "SOME FOOD PRICES",
+                ...titleStyle,
+            });
+            that.elem.style.marginTop = "0px";
+
+            Label({
+                text: "- <b>Komagene Çiğ Köfte:</b> Çiğ köfte wrap 95TL, Ayran 30TL - 06.2016 (See on map)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.google.com/maps/place/Komagene+Bostanl%C4%B1+%C3%A7ar%C5%9F%C4%B1/@38.4582603,27.0971199,19.36z/data=!4m6!3m5!1s0x14bbd9f473131cfb:0x64684435deac8639!8m2!3d38.4585614!4d27.0973783!16s%2Fg%2F11smjdxsfg?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D", '_blank');
+            });
+
+            Label({
+                text: "- <b>Kokoreççi Baki Usta in Bostanlı:</b> Half a loaf of bread with kokoreç (lamb intestines) 380TL, Ayran 80TL - 06.2016 (See on map)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.google.com/maps/place/Kokore%C3%A7%C3%A7i+Baki+Usta/@38.4578179,27.097595,20.42z/data=!4m6!3m5!1s0x14bbd9948779aa0d:0x2dff4bfd1deec91e!8m2!3d38.4578191!4d27.0976473!16s%2Fg%2F11bz_qb421?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D", '_blank');
+            });
+
+            Label({
+                text: "- <b>Helvacı Ali in Bostanlı:</b> Plain halva with ice cream 120TL - 06.2016 (See on map)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.google.com/maps/place/Helvac%C4%B1+Ali+Bostanl%C4%B1/@38.4576817,27.0980436,19.15z/data=!4m6!3m5!1s0x14bbd9c1ed272453:0x57315ef36369faa0!8m2!3d38.4576235!4d27.0984901!16s%2Fg%2F11pyvbf8v8?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D", '_blank');
+            });
+
+            Label({
+                text: "- <b>Kırçiçeği Restorant in Alsancak:</b> Iskender kebab 590TL - 06.2016 (See on map)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.google.com/maps/place/K%C4%B1r%C3%A7i%C3%A7e%C4%9Fi+Restoran/@38.4369186,27.1430441,18.04z/data=!4m6!3m5!1s0x14bbd85b712d804d:0xdb085db77e487a41!8m2!3d38.436982!4d27.143011!16s%2Fg%2F11c6tvm0wv?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D", '_blank');
+            });
+
+            Label({
+                text: "- <b>Caribou Coffee in Bostanlı:</b> Turkish Coffee 115TL - 06.2016 (See on map)",
+                fontSize: 14,
+            });
+            that.elem.style.cursor = "pointer";
+            that.on("click", function(self) {
+                window.open("https://www.google.com/maps/place/Caribou+Coffee/@38.4585535,27.0932402,17.05z/data=!4m6!3m5!1s0x14bbd993021fb147:0xd3cd14cd7650d346!8m2!3d38.4591281!4d27.0933633!16s%2Fg%2F11c7szkztf?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D", '_blank');
+            });
+
+            Label({
                 text: "<b>Note:</b> I can also plan a trip to <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Fethiye</b></span> for you.",
                 fontSize: 14,
             });
@@ -568,6 +619,7 @@
                 window.open("https://sites.google.com/view/fethiye-guide/fethiye", '_blank');
             });
             that.elem.style.marginBottom = "10px";
+            that.elem.style.marginTop = "20px";
 
             Label({
                 text: "Developed by <span style='color: #CD5F44;background-color:#FFF9C5;'><b>Buğra Özden</b></span>",
